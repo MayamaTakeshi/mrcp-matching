@@ -1,0 +1,22 @@
+{
+  "name": "mrcp-matching",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "MayamaTakeshi",
+  "repository": "https://github.com/MayamaTakeshi/mrcp-matching",
+  "license": "MIT",
+  "dependencies": {
+    "data-matching": "^1.24.0",
+    "mrcp": "^1.4.0"
+  },
+  "scripts": {
+    "test": "jest --verbose ./test"
+  },
+  "keywords": [
+    "mrcp",
+    "matching"
+  ],
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}

@@ -6,6 +6,7 @@ Example:
 const m = require('data-matching')
 const mrcp_matcher = require('mrcp-matching')
 const assert = require('assert')
+const _ = require('lodash')
 
 const s = `MRCP/2.0 91 SPEAK 1
 content-type: application/xml
@@ -29,7 +30,7 @@ assert(matcher(s, store) == true)
 assert(store.type == 'request')
 assert(store.method == 'SPEAK')
 assert(store.request_id = 1)
-assert(JSON.stringify(store.headers) == JSON.stringify({ 'content-type': 'application/xml', 'content-length': '17' }))
+assert(_.isEqual(store.headers, { 'content-type': 'application/xml', 'content-length': '17' }))
 assert(store.body == '<root>test</root>')
 
 console.log("success")

@@ -4,8 +4,7 @@ Permits to match and collect data from MRCP (Media Resource Control Protocol).
 Example:
 ```
 const m = require('data-matching')
-const mrcp = require('mrcp')
-const mrcp_matcher = require('./index.js')
+const mrcp_matcher = require('mrcp-matching')
 const assert = require('assert')
 
 const s = `MRCP/2.0 91 SPEAK 1
